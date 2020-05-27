@@ -11,17 +11,17 @@
 
 
   <body>
-    <h1> my potato testing site </h1>
-    <p id="center">potatos for free</p>
-    <img src="imgs/potato.png" alt="potato image">
-    <p>potato site rules</p>
+    <h1> my loli testing site </h1>
+    <p id="center">loli for free</p>
+    <img src="imgs/loli.png" alt="loli image">
+    <p>Lolis site rules</p>
     <ol>
-      <li>aaaaa</li>
-      <li>bbbbb</li>
-      <li>ccccc</li>
+      <li>love the lolies</li>
+      <li>praise the lolies</li>
+      <li>respect the lolies</li>
     </ol>
 
-    <a href="https://en.wikipedia.org/wiki/Potato">a gift from the manager</a>
+    <a href="https://www.deviantart.com/tag/loli">a gift from the manager</a>
     <br>
     <br>
     <button>Change user </button>
