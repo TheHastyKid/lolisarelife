@@ -1,42 +1,163 @@
-  h1 {
-  color: #4C1933;
-  font-size: 60px;
-  text-align: center;
-  border: 1px solid black;
-  margin: 0 auto;
-  padding: 0px 0;
-  display: block;
-  text-shadow: 3px 3px 1px black;
+:root {
+  --primary: #ddd;
+  --dark: #A914DB;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
-img {
 
-  display: block;
-  margin: 0 auto;
-}
-#center{
-  text-align: center;
-  font-size: 30px;
-
-}
-p, li {
-  color: #4C1933;
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-}
-a{
-  color: #4C1933;
-
-}
 html {
-  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
-  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
-  background-color: #BF3F7F;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background: #DB72BF;
+  margin: 30px 50px;
+  line-height: 1;
+}
+img{
+  max-width: 100%;
+}
+.button {
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+.wrapper{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 'nav nav'
+                        'containerA containerB'
+                        'containerC containerD'
+                        'footer footer';
+}
+.nav-bar{
+  grid-area: nav;
+}
+.nav-bar ul{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+flex: auto;
+list-style: none;
+padding: 0;
 
 }
-body {
-  width: 600px;
-  margin: 0 auto;
-  padding: 20px 20px 20px 20px;
-  border: 5px solid b lack;
+.nav-bar a {
+  background-color: pink;
+  min-width: 85px;
+  display: block;
+  text-decoration: none;
+  padding: .8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+.nav-bar a:hover{
+color:var(--light);
+background-color: var(--dark);
+}
+.container{
+}
+.item-a ,.item-b ,.item-c , .item-d {
+  min-height: 400px;
+  background-size: cover;
+  padding: 2rem;
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ box-shadow: var(--shadow);
+ background-position: center;
+}
+.item-a{
+  grid-area: containerA;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8513e9b1-28b4-483b-b341-eaf077ea87d2/dbvtqkc-ce1643ea-95a9-42c0-a8a1-66859da69da7.png/v1/crop/w_247,h_350,x_0,y_0,scl_0.124,strp/salem___the_heresy_witch_by_chinchongcha_dbvtqkc-350t.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xNDQ5IiwicGF0aCI6IlwvZlwvODUxM2U5YjEtMjhiNC00ODNiLWIzNDEtZWFmMDc3ZWE4N2QyXC9kYnZ0cWtjLWNlMTY0M2VhLTk1YTktNDJjMC1hOGExLTY2ODU5ZGE2OWRhNy5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.brknvTCK1SHDUBKB2gGHk39n0_NJOc3xypzCZY6-Mkk);
+}
+
+.item-b{
+  grid-area: containerB;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b925e785-3e47-42c3-8110-f2743254296d/d9kqx3o-84301b27-16c0-4f0d-97f3-8f11991de3da.png/v1/fill/w_265,h_250,q_70,strp/loli_ryuuko_by_krokobyaka_d9kqx3o-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD05NDQiLCJwYXRoIjoiXC9mXC9iOTI1ZTc4NS0zZTQ3LTQyYzMtODExMC1mMjc0MzI1NDI5NmRcL2Q5a3F4M28tODQzMDFiMjctMTZjMC00ZjBkLTk3ZjMtOGYxMTk5MWRlM2RhLnBuZyIsIndpZHRoIjoiPD0xMDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.ZRjr4jR_HxzLHHhmWCw9MCLXpSiVyLGpoLcBJuHSgwE);
+}
+
+.item-c{11
+  grid-area: containerC;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6cfa9003-d7e9-47fe-a9a0-e115b9e40395/dcnqgcj-4c34b233-b048-454e-bad3-5191f6193b05.jpg/v1/fill/w_248,h_350,q_70,strp/loli_bowserette_by_milkshakework_dcnqgcj-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMjAwIiwicGF0aCI6IlwvZlwvNmNmYTkwMDMtZDdlOS00N2ZlLWE5YTAtZTExNWI5ZTQwMzk1XC9kY25xZ2NqLTRjMzRiMjMzLWIwNDgtNDU0ZS1iYWQzLTUxOTFmNjE5M2IwNS5qcGciLCJ3aWR0aCI6Ijw9ODUxIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RrjTwaUPxyACDpZWSrUpgb48aZsrPaagyVZZQjnpkE0);
+}
+
+.item-d{
+  grid-area: containerD;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/90b4db6e-3d5e-4236-8250-a9a6fef0ef4a/db6h61t-3e89b282-0f0d-491f-8b07-9548a56c0106.jpg/v1/fill/w_198,h_250,q_70,strp/ero_manga_sensei_by_rosuuri_db6h61t-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDEwIiwicGF0aCI6IlwvZlwvOTBiNGRiNmUtM2Q1ZS00MjM2LTgyNTAtYTlhNmZlZjBlZjRhXC9kYjZoNjF0LTNlODliMjgyLTBmMGQtNDkxZi04YjA3LTk1NDhhNTZjMDEwNi5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.2Sy9hr_uoaHPbQRTHCwq2AsP2_2T3HGF15_MtVRwU-8);
+}
+footer{
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  flex:auto;
+  align-items:center;
+  justify-content:space-space-around;
+  margin-top: 2rem;
+ background: var(--dark);
+ color: var(--light);
+
+ padding: 1rem;
+
+}
+footer h1 {
+  font-size: .8rem;
+
+}
+footer address {
+  margin: 10px;
+  text-align: : center;
+}
+footer a {
+  text-decoration:none;
+}
+
+@media (max-width: 700px) {
+.nav-bar ul{
+  flex-direction: column;
+}
+
+.nav-bar li {
+  min-width: 250px;
+}
+.wrapper{
+  grid-template-areas: 'nav'
+                        'containerA'
+                        'containerB'
+                        'containerC'
+                        'containerD'
+                        'footer';
+
+}
+}
+
+
+
+@media (max-width: 500px) {
+.nav-bar ul{
+  flex-direction: column;
+}
+.nav-bar li {
+  min-width: 200px;
+}
+
+.wrapper{
+  grid-template-areas: 'nav'
+                        'containerA'
+                        'containerB'
+                        'containerC'
+                        'containerD'
+                        'footer';
+
+}
 }
